@@ -1,6 +1,6 @@
 
 # Black Ops                              
   
-" Black Ops is an  Operating System codename " ", in making, for the submission of Final Year Project in my course"
+" Black Ops is an  Operating System codename " ", in making, for the submission as Final Year Project for the completion   of my course"
 
-																																																				-- beingamitrawat
+																																											-- beingamitrawat

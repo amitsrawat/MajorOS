@@ -55,7 +55,7 @@ DATE : 21ST May , 2015 , 9:00 PM
 ** Call implicitly push the Current IP to stack and retrieve it with pop.
 (With this bug , I came to know about how a CS:IP changes and why we can't manipulate it directly)
 
-** NOT DOCUMENTED (Can be considered as a bug nowadays and also WHEN PROGRAMMING IN ASSEMBLY)
+** NOT DOCUMENTED YET (Can be considered as a bug nowadays and also WHEN PROGRAMMING IN ASSEMBLY), I will be documenting in near future.
 
 
 	#DISK STRUCTURE
@@ -83,3 +83,6 @@ DATE : 21ST May , 2015 , 9:00 PM
 			SHELL	   	= 	6KB (12 SECTORS)
    
 			USER FILES  	= 	MAX 1KB
+
+# I know, my code is redundant by not using any 16-bit linker , and I guess NASM doesn't produce 16-bit object code 
+# Also, shell is the kernel in this OS, for the save above reason 

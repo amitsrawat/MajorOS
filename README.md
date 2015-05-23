@@ -85,4 +85,4 @@ DATE : 21ST May , 2015 , 9:00 PM
 			USER FILES  	= 	MAX 1KB
 
 # I know, my code is redundant by not using any 16-bit linker , and I guess NASM doesn't produce 16-bit object code 
-# Also, shell is the kernel in this OS, for the save above reason 
+ 

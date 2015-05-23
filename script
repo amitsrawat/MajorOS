@@ -1,0 +1,20 @@
+#!/bin/bash
+# Make sure you have Qemulator or some other x86 emulator
+# First locate to the directory in which all these files red
+# And then run the script
+
+nasm floppy.asm -f bin -o floppy
+nasm bootloader.asm -f bin -o bootloader
+nasm disk-map.asm -f bin -o disk-map
+nasm directory.asm -f bin -o directory
+nasm kernel.asm -f bin -o kernel
+nasm shell.asm -f bin -o shell
+
+dd if=bootloader of=floppy bs=512 conv=notrunc
+dd if=disk-map of=floppy bs=512 conv=notrunc seek=1
+dd if=directory of=floppy bs=512 conv=notrunc seek=2
+dd if=kernel of=floppy bs=512 conv=notrunc seek=3
+dd if=shell of=floppy bs=512 conv=notrunc seek=4
+
+qemu-system-i386 floppy
+exit 0

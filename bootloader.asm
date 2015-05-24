@@ -5,8 +5,8 @@
 
 	
 	BITS 16
-	[org 0x00]								; Tell the Assembler that our code is loaded at 0x0000. However the bootloader is loaded
-											; at 0x7c00, which we will tell by setting the CS to 0x7c0 in the next instruction
+	[org 0x00]							; Tell the Assembler that our code is loaded at 0x0000. However the bootloader is loaded
+									; at 0x7c00, which we will tell by setting the CS to 0x7c0 in the next instruction
 	
 	JMP 0x7c0:START							; The only way change CS is to make far jump  using a CS:IP pair 
 
